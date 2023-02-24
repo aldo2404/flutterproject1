@@ -87,24 +87,60 @@ class HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             DrawerHeader(
-              child: Container(
-                color: Colors.lightBlueAccent,
+              decoration: const BoxDecoration(
+                gradient: RadialGradient(
+                  colors: <Color>[
+                    Color.fromARGB(255, 252, 251, 251),
+                    Color.fromARGB(255, 1, 59, 82)
+                  ],
+                  focalRadius: 4,
+                  radius: 1,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const CircleAvatar(
+                    backgroundImage:
+                        NetworkImage("assets/images/walkzero_logo3.png"),
+                    radius: 30,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "WalkZero",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text(
+                        "www.walkzero.com",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
             const ListTile(
-              title: Text("data 1"),
+              leading: Icon(Icons.person_add),
+              title: Text("Add Profile"),
             ),
             const ListTile(
-              title: Text("data 2"),
+              leading: Icon(Icons.info_outline),
+              title: Text("About"),
             ),
-            const ListTile(
-              title: Text("data 3"),
-            ),
-            const ListTile(
-              title: Text("data 4"),
-            ),
-            const ListTile(
-              title: Text("data 5"),
+            ListTile(
+              leading: Icon(Icons.exit_to_app),
+              title: Text("Exit"),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
           ],
         ),

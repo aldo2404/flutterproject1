@@ -37,6 +37,7 @@ dependencies:
   path: ^1.8.2
   carousel_slider: ^4.2.1
   animated_splash_screen: ^1.3.0
+  avatar_glow: ^2.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -71,10 +72,10 @@ flutter:
     - assets/images/walkzero_name_logo.jpg
     - assets/images/walkzero_logo3.png
     - assets/images/walkzero_name_2.png
-    - assets/images/medicine_img.jpg
-    - assets/images/medicine_img_2.jpg
-    - assets/images/medicine_img_3.jpg
-    - assets/images/medicine_img_4.jpg
+    - assets/images/food_item_1.jpg
+    - assets/images/food_item_2.jpg
+    - assets/images/food_item_3.jpg
+    - assets/images/food_item_4.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

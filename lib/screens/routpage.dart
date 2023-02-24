@@ -1,6 +1,7 @@
 import 'package:demo_project/layout/bottomnavibar.dart';
 import 'package:demo_project/screens/carouselpage.dart';
 import 'package:demo_project/screens/home_page.dart';
+import 'package:demo_project/screens/locationpage.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -12,6 +13,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => CarouselPage());
       case '/homepage':
         return MaterialPageRoute(builder: (_) => BottomNaviBar());
+      case '/location':
+        return MaterialPageRoute(builder: (_) => LocationPage());
       default:
         return MaterialPageRoute(builder: (_) => CarouselPage());
     }

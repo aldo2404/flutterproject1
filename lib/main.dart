@@ -15,13 +15,6 @@ class MySampleApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
-      // theme: ThemeData(
-      //   brightness: Brightness.light,
-      //   colorScheme: ColorScheme.fromSwatch().copyWith(
-      //     secondary: const Color.fromARGB(255, 3, 177, 154),
-      //   ),
-      // ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
@@ -44,7 +37,7 @@ class SplashScreenState extends State<SplashScreen> {
     Timer(
       const Duration(seconds: 2),
       () {
-        Navigator.push(
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => Routes()),
         );

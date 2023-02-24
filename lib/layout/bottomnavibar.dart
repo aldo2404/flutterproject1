@@ -1,6 +1,8 @@
 import 'package:demo_project/screens/home_page.dart';
 import 'package:demo_project/screens/learn_flutter.dart';
+import 'package:demo_project/screens/locationpage.dart';
 import 'package:demo_project/screens/login_page.dart';
+import 'package:demo_project/screens/news_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomNaviBar extends StatefulWidget {
@@ -14,8 +16,10 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    // LearnFlutter(),
-    // LoginPage(),
+    LocationPage(),
+    LearnFlutter(),
+    LoginPage(),
+    NewsPage(),
   ];
   void _onItemTapped(int index) {
     setState(() {
